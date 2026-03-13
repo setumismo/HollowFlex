@@ -471,7 +471,9 @@ function renderWorkout() {
       <div class="workout-series-info">${seriesLabel}</div>
       <div id="workout-counter" class="workout-counter">${state.repsRemaining}</div>
       <div class="workout-counter-label">Flexiones Restantes</div>
-      <button id="nose-button" class="nose-button" aria-label="Registrar flexión"></button>
+      <button id="nose-button" class="nose-button" aria-label="Registrar flexión">
+        <span class="nose-button-text">TOCA CON LA NARIZ</span>
+      </button>
       ${instructionHTML}
     </div>
   `;

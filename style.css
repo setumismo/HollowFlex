@@ -352,7 +352,14 @@ body {
   border: none;
   cursor: pointer;
   position: relative;
-  background-color: transparent;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding-bottom: 20px;
+
+  background-color: var(--bg-surface);
   background-image: url('/assets/toca_nariz.png');
   background-size: cover;
   background-position: center;
@@ -360,6 +367,14 @@ body {
     0 8px 30px rgba(0, 0, 0, 0.4),
     0 0 50px rgba(224, 245, 255, 0.1);
   transition: all 0.1s var(--ease);
+}
+
+.nose-button-text {
+  font-size: 14px;
+  font-weight: 800;
+  color: var(--text-main);
+  letter-spacing: 0.5px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .nose-button:active {
