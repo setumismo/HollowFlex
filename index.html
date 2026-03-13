@@ -1,19 +1,39 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="dark">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <meta name="theme-color" content="#0a0e1a" />
-  <meta name="description" content="Hollow Flex - Fitness con alma de caballero. Entrena flexiones con estética amigurumi." />
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
   <title>Hollow Flex</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/icon?family=Material+Symbols+Rounded" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+          tailwind.config = {
+              darkMode: "class",
+              theme: {
+                  extend: {
+                      colors: {
+                          "primary": "#e0f5ff",
+                          "background-light": "#f5f7f8",
+                          "background-dark": "#0f1d23",
+                          "accent-soul": "#E0F8FF",
+                          "knight-blue": "#2e586b",
+                          "cardboard": "#c5a47e",
+                          "cardboard-dark": "#a6865d"
+                      },
+                      fontFamily: {
+                          "display": ['"Plus Jakarta Sans"', "sans-serif"]
+                      },
+                      borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+                  },
+              },
+          }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="/style.css" />
 </head>
-<body>
-  <div id="app"></div>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 min-h-screen w-full m-0 p-0 overflow-x-hidden">
+  <div id="app" class="w-full h-full min-h-screen flex flex-col"></div>
   <script type="module" src="/src/main.js"></script>
 </body>
 </html>
