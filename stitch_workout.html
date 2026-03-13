@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#e0f5ff",
+                        "background-light": "#f5f7f8",
+                        "background-dark": "#12161D",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .crochet-texture {
+            background-image: radial-gradient(circle at 2px 2px, rgba(224, 245, 255, 0.05) 1px, transparent 0);
+            background-size: 8px 8px;
+        }
+        .amigurumi-shadow {
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3), 0 8px 10px -6px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 min-h-screen flex flex-col overflow-x-hidden crochet-texture">
+<!-- Top Navigation -->
+<nav class="flex items-center justify-between p-6">
+<button class="text-slate-900 dark:text-slate-100 hover:opacity-80 transition-opacity">
+<span class="material-symbols-outlined text-3xl">arrow_back</span>
+</button>
+<h2 class="text-lg font-bold tracking-tight uppercase">Hollow Flex</h2>
+<div class="w-8"></div> <!-- Spacer for centering -->
+</nav>
+<!-- Header: Amigurumi Set Containers -->
+<div class="flex justify-center gap-6 px-4 py-8">
+<!-- Set 1 (Active/Full) -->
+<div class="flex flex-col items-center gap-2">
+<div class="w-20 h-24 bg-primary/20 rounded-xl border-2 border-primary/40 flex items-center justify-center relative overflow-hidden amigurumi-shadow">
+<div class="absolute inset-0 opacity-20 bg-[url('https://www.transparenttextures.com/patterns/knitted-net.png')]"></div>
+<span class="material-symbols-outlined text-primary text-4xl">favorite</span>
+</div>
+<span class="text-[10px] font-bold tracking-widest uppercase text-primary/60">SET 1</span>
+</div>
+<!-- Set 2 (Empty/Pending) -->
+<div class="flex flex-col items-center gap-2">
+<div class="w-20 h-24 bg-slate-800/40 rounded-xl border-2 border-slate-700 flex items-center justify-center relative overflow-hidden">
+<div class="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/knitted-net.png')]"></div>
+<span class="material-symbols-outlined text-slate-600 text-4xl">favorite</span>
+</div>
+<span class="text-[10px] font-bold tracking-widest uppercase text-slate-600">SET 2</span>
+</div>
+<!-- Set 3 (Empty/Pending) -->
+<div class="flex flex-col items-center gap-2">
+<div class="w-20 h-24 bg-slate-800/40 rounded-xl border-2 border-slate-700 flex items-center justify-center relative overflow-hidden">
+<div class="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/knitted-net.png')]"></div>
+<span class="material-symbols-outlined text-slate-600 text-4xl">favorite</span>
+</div>
+<span class="text-[10px] font-bold tracking-widest uppercase text-slate-600">SET 3</span>
+</div>
+</div>
+<!-- Main Content: Counter -->
+<main class="flex-1 flex flex-col items-center justify-center px-6">
+<div class="relative">
+<h1 class="text-white text-[140px] font-black leading-none tracking-tighter drop-shadow-2xl">
+                12
+            </h1>
+<!-- Decorative crochet stitch element around the number -->
+<div class="absolute -inset-4 border-4 border-dashed border-primary/10 rounded-full -z-10 animate-pulse"></div>
+</div>
+<h2 class="text-primary text-xl font-bold leading-tight tracking-[0.2em] uppercase mt-4">
+            Flexiones Restantes
+        </h2>
+</main>
+<!-- Footer: Interaction Zone -->
+<footer class="p-8 pb-12 flex flex-col items-center gap-6">
+<div class="relative group">
+<!-- Large Amigurumi Style Button -->
+<button class="relative z-10 flex flex-col items-center justify-center w-64 h-64 rounded-full bg-white text-background-dark transition-transform active:scale-95 shadow-[0_20px_50px_rgba(224,245,255,0.3)] border-8 border-primary/20 overflow-hidden">
+<!-- Stitched Texture Overlay -->
+<div class="absolute inset-0 opacity-30 pointer-events-none bg-[url('https://www.transparenttextures.com/patterns/white-diamond.png')]"></div>
+<img alt="Hollow Knight Icon" class="w-16 h-16 object-contain mb-4" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEEAAABGCAYAAACT8vn9AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAB3pSURBVHhexVsJlJ1leX5n5u7LzNw7+5ohM2ELIQRIwKXFKlFJ1LCEiFbPaRGUooJVj5aigj0otZTWHrWnx9pSUQHlUOOBotYNDZAQlZSSACHLJLPPvXPvLHfu3Nmnz/N+/3fvP3fujKHHnr4z//zbt7zv+73790/ZEkAAPJWVlfESN/x13ReB0yUPq7UrBbav9nHmKQVl+OEvwT2fnWsZvkVgmq/s4wZ3/zwT1gLboXhi23U1ZNaCwpjsvxypteBM270WUCZwYL1xDW6RM9cFPhUj4H7nhhWIoplZdaxx8asS81soNf7/KRMs8J4T8bDXpknpVbBtLNjhSjRVKG5vweJR6p0b2KxUk9XGJaz1riQTCL8Lkd8HcN7f5zz/2/FK2gQ+WW0sNuYre7YwNTUlk5NZqaiokOrqapzLnTcGVkNwzbkUs9UJm59f0HfuuZwurjELmBaulkPZ4uKi9nNPtAIxV283MUNDCTl69FX5rxdekJMnT8rExKSUlZfLuedskA/feouEwyFtRyjwmn3tdQFKM2h5O9umf2BAHn74e9LfPyjl5WXSUF8nmzdvkgsu2CQtLU1oAeuT78tzufZ1426v9Yw/KzEqAjZZWJjXa4/HC2InZO8PHpef/uwpXY252TkZz0xKQ2Oj5CARPm+Z/MOX75e62hrtY8HMZKbLI2C5i5Pe55HUv3rtBr7/yle/Jv/5k19gvmYZSYxIdSwmk5kJqaqKyLZtl8rb37Zd1q1rB25zUoFFKSuvcHqvBM65XGZXBYOMx+OR06d75e7Pf0G+/Z1HgJBHZucXJV5bJ9VVVZLNZKQCNNywZ88KBhAMffxDinnNk/mxQKR45BuUgMpKzJWdlLHRlESrorKwuCihaFR8gZD87Oe/knvvvU9++tOfQ0oq1mQAgUxdXRIUGb1AS65QhRx47tfy1a/9k5RVeGQkmZRgKIyJPDI3NyfRSEDaWlvklg/ehFVoU0LsqrrBPl/rvRtKtZmcnJRDh/5bnvzhD+WVo8ckm5uBHYrJwvy8hKCCY6NpiYZCcs0178SxSxdvLSgtCUBEcXHwIQP27Xta7vnCvTIztyBVmLA6HgcDynXFw5GgzIIRGazO7Nys6URYTs8yKEUcgc/tu9XaRCIROX/jedLU3IK7MqkHDoGAX3z+AM4h8Xr9EqqslEcf2yuPfPdRmcrl8upcCspLCoIighNkm4bu+PET8s/feEBmZ+YlgNU/3dOL1Z/Xybq7T2NlpsCYuKTS4/LJT98hzx7YbwgoQQOfl5zzNcDo2Lh85nN3yYGDv5Eq2AN/ICBDg8PAoVqGEwl9ls1NQz2C8v29j8sTTzwJD0JpKDEvHpWvxm3lAiAD0XvggQdlZAT6VxmVSuhePB4Tj9croUgIOlkpdfUN0gPG+PxBGMkFCWBF1oLV5iSK5iggS4YVM41iL0vlMg1Cx8bGcExIfUOdpFNJiUAdZmdmYJsqsFALsrhUBjvxlDx/6BB6ct6VY7vUwfWSP87ETzz+H9LX369E83k6nVadm8BqjI8CAdznpnISDUdkaKBXbr3lg3LxlovWFD83WER4KGs4r4OKg8IKqIX4/8WnPi7NTQ3iQVwCcZVKGOZ0akT8PngveKrp6Rm882CMMsnNzMqDDz4kOagFoXhcFxMops4lzlytY8eOy2P/vlcn8fv9KlK0zF5vQOobG6CbYWlsapIMXGYg4JXP3flpecfOt5lx0Oe1gFs6eG3udSB9ZheFgNhG2tvb5Iv33C3nnt0lXqhtZnxCGhqaQPC01MSrxeuhJMxILFYt42MZOQaVfvLJH6E3xjbDKHBhizAtTEQ4ePAgJlyS8YmM2oLpmTlJJlPK5Wx2SkZhA8YhEZhPbvvorfKG178OyDKKE4jjaja3sPKWMMsAN6GlwL6nQSau0WhY7vzLT8kFG8+RU90nEbVOSnI4gZghA8kt1/ilAsHU3OwMFs4nP/rxj9Emp1SaoQyzl2FaBlfIwfkig4GeeXY/OntldHRUenv7sLgemUJoHIPojaZGJRKNSHYqI1e/a4dsu3SLMzKHBFFudjtAIuwqW8LtmWCfuxlEfAywnast5qFE+P0+jU63bb0Y0hiUluZWJXgehjsUDssYJKS2rk6mwZBhBFZPP/005uAIhlaCiwl8UFCJ4ydOqrVfQkDUteFsqcNAfjAkWhmRSbjCeLwKEjIml1+2Vd69Z7dGZxzdTVQxFL+z924JcF8vb8/n5p3+xSsGQzMwghT59/3xe2UKeLHPBCR3JJWScqhJDlIbQswQhAepQLT7y1/tU+kmA83wLnWwc9uJn0NgNAtuDg0Nyxxc4zR0LZVKICQul+HhIY0LpnNZuXrXTvXRFRVe7edG9ncB57TSYYHX9rDv3O8tWHxpq+YRm2zZcqFsuWiT9A30SU1NjcRjcRlAjsG+pEFtmseHxe2GNxkFvjaSdDHBTGQmW1hYkMOHD6vu1dbVyAx0Cr5GKqsr0WVJmpAj0D1t23qpXAJPQCiB5+8E9lmNwNWkQxljrvQvcbRjvGPnDglj1cdgp+jOfT4/8K9VaaBaLCDEJ94ZeA8Ch2UgWFCHwjwwfFj19Jik4YOpZ+nxUVlYWoTBmdR0mbHDLBjT1blekbBImjMRKuj18ncGip/n7/NN7IUZxw2WYJ7z105+sGFDFxaoXsbH0zCUp8CQCML7BFwqoluEztNQnXnEGFNTWW1v+xfUwdwrZJEJ0v2F4RFm4GP9Ph98cjPsQJx4qX0IBgOy8fzztb0dzA1uZN3nleASf/44RJv2BQas1Z99qONVCNw2XXABXGUjPEelqgWNpB9BXAQMYUzhBS30EAY4/opgyUyKMBLSkIMx8eE8JblsTvr7+jUGT42MQCLGZRHBUCO47gYlxLVyqyHO5/adbVKqn23Hg6/tcwXcsw+PMrhj+4q6zgJPMBiUvr4eXczxsbQkE4MyMT4GZomqCwHCDXC5SEyFcc1IPnArgghwHOqwCPHpOKtN5hfnJQiONjW1KKvIddqOYnAj6qJrTbAE2r5uhvDS3BepDZraPuxmH9MYJhLDMGGLUNlZRLgpvDfBXgQhPyUmiuRKwUFVmWAnsUCDQkZQdMhZJizz8LNj4Oji4oIWVegdphAwrQUOTa8RCp0UrTxelmBS7zxyAZ9nMlmZgj1raW2XmelZWb++E3QEVCXq66kiVYgiZ1VNtA/HxiTKBA5ARuhDAAMQGpkcXCBtRVDTVI/UIGZnclKJwVhRevHIS9r+TGHZSrrAzSyl0eLjXCvhALNYxWCesU0fVPbYsRO62kyykokk7EC5JIaHdeEmsxlpbW2R2hrYNgBVg0O6bAIndq4wYDgUVHcDfZA07EAERjKdHuVLNYpTsBP7EVGWUonVIE+Qi+hl4MzPk5twQzyZUuioT/DHqjBhH6LBWUgsImVQtgRvAAMItaitr9HCD0N61iOrVB3MeDyMOvCP88BCV1cXVrwS+lOFyMsjQYSgNJZh2AoWLmIIRn7929/Kiy8e1vYOnsugcFv0YjVwpi9g4VyjOxmxAFXkmRFf/h6LQLz7+ga02kT9Z4yQSqV1oRg6U20bmxqRVPnkvPM3mkHRX0/40Wqzm3gLTJA+etufy8BQUuqgT6NjKc3M/P6QhIIhSY4M6+TNyCL/6u7PSn1dXAfUwXW8wphEeBa5/QQCFvpo1gDmgTxDXrxCFlghi+jrg+4y7mCRJArkA5C4UMivsYqNR5QJLLUzMQITfAiFM4hdvvQ3fycvvHBEF8zrw4ExmfgxxZ6DgWRYvwip/uI9n5fNF4IRxJbMxNUqJXdDyDcf/I786799SxqRlAwNDsCgxDSDZJ7OMNoLBKampuXyy7fKh//sJiQvTdqXCDMqY1H2laNH5dWjxxDLp2UIukkV6+/v0/oks1IyKxoJIZLLaS2QBrcSK5nDIjQ0NCAbrJA2pM0d7R1y7nlnSxOeVceq0NYESAzc7v3rv5XDR15Rb9DR0SkJBEhk3tIi84hJTaqOHj0C4s+TL//9fdqPoAwlrYYJ7tVjeX0RcQBWDhPcccdnwVFEiiCqHAgR+THYhiZIAEtZLGnTg5yzYb184AM3apw+AIbt339ABocSrNEq8U1gEEt1C8hH/DC03LOIxWqcEv4YLHdU556ZnYbxndMNnBwYDGyIL1ZzHvpcq0nSJZdska3btiIkrpeHHn5EXnrpFS3ikASvx6+GkTENI8YZjBVFtitL83LTje+XK7e/WefRXzCABiS/DYdLR4LBAAzCQKICK/PYY3vl4UcehY+tlpPI2ZtbWpCwLGjBgvrH1ZsYH0dbkeqqalUjDuz3B7C6M5pc0a2yQsyCTA6xO+cJIJiZgVQxImUWyGoVQ1pa70RyBFJXi8CMjELIi/ieARBLFGQ6PZPX69GchpWjOjBjRPvE0TcpDQjiKEksptTX18vYRFr+8A2vk9tvvxU4g3AgsAQCSSMj7nIyQx/ypH9pIJFUQNx4t3PnVdIIERxH/tDQgMERcvoQeNC9kElB2Ae2q4XdoMTU1Nbq6lJVfHC1MxBRBimVCK5GR8ckBkQXQIQPRoqERKMh2Id5rU0Q4WEEOnGMQTGtrK6Cfns1b4nFYyr6rHRTUkMw0PNIiMhM1jv4fgJSQrkeHh7Rqjj3I5IjSfFBUrdDAlwarwtYDvdJJoK3JIHqYM5kituwcSU/8YnbYIxmIaY5EFeOqKwPDIBoY+WYrNRDTFliC8OY0Rh5dJWmNeeIRqLqozludaxSUtDXemR2NJCG9VABhOacj5LgR6A2A2lh/gJFw+sy1fVRGFOu+DBUKw7bND4xrraB4XtualKlIp3iZkxEV5lFlXUd68DgWbnhht2yceO5+tzSZYG0uoIlzIcJLegVHlJVzjqrQz7ykVtgcRl+MiFh7QATgTHhSEQTLSJahZVbmF+SgD8MLnthID06ts/rh8SEVXWiaL+0VK4VaRpQD9pRjSjKWjWua0Z0ugBfXq2ymkK0Go/XqJvjgjAGoCSUYyVp9Wlf6iCh3JOshQplJ7LqvbgQJ04el5073iq7du3UBSMtpcDECUUvea92wpGfRUy6ffuVWr0ZGhyUMCbJZbNay6PboQiTOBYrQiEfViYL3a1AHg/DhqEzmQkwdVGyCGsZbyyVYUUwdHaSkuXTcHcMIh0M+jHWEAytKadzNRmuj8PmsK4xmk4roycnM2pIaStoMOeBH22NWUMEeuGQ+GHEL7noAvnQzX+qdNB4UwVKQemnDlhG0JtSVK++5l3ysds+oqEoVz+G1DoSqVQbwHicjqYKfplGlv2oz+RjLEY9ngeDgtDrKTAIrhAGsR6RHAMeGkwGno2NcImeMnVvYTCEHGxqaoCqjen2GongRk8AizCOmKMchLEGSokg4yahdl4QzwSqY12L3PHpT6jdWaKh52o4NBVDPk5YDUgMQ2NlBlpysq9//Rvy0EOPih9GKcQ8HROxyMKgRhmHHxol8pjhqtdLfWc4yx1ij1p6DlbNcjiIqYYHmBjPKAFEmO45CKLp5kjkEhjF4IhLTRxIPPcXODbnZsYYhLGmgaRR7zxrnXzmzk+B+VU6Hl2zEs8VIX48u2BVSSg0ZPADYVaijJpcf/1uBCXrVC3Yjj6dc9Ct8X1lVRR2wINVrdDCLKcJgkGMMZiZUpTpLegeO9at05WsRcTJDR7OolEeVEEtPlbXbPwiqoTqMbulHSEwO+QukwcqxflZQ5idm5Y3vvF1wKlK7RTXWF0+G+AoZgAhbxgt2GtdUb02ok2dYg2f10m4oP6+PljwSeh9VleAhq6n57SuXBrRYQUYMIOokpEgd35YtE1BpykFo7AdNIJZuDxaebabgN2YxZnB0MLinOo97QQZxLm4d8BIMgGbsYhEiMAEiYQykOvp6cMSlel8/GCEqBMXSg1pUDq010pYYRjd1xbsI/tmDvahtrZOQjCGLGRysnhtzKw8kq4gs0+ILsNeiiK3zWnhWeWpxuqWQ0oo7uu7OoEsw2JIVTiqut4Gycghp2hrbVWRZ/WKdoExiQfRYBxexAP37INXoFtn6X8OzCBDaEiZRXLbkECijVsk0LKVhlXUwTQnQ5hkWLDM4H4kV3AU4TN3eVhsYUWH7Zm70z7QAI6gHSPISXiS3t4eNY5cSVpBbu7ovib8fxLR3gTOjBozGJdeJJVOgbAZ3ePI5aZU73t6e3X+LMbj3OVlHlxPihcum4Ecpay+vgEu/Sxtp+jiD6VCpbpASh5IEyyG0yAP5BxEx3bQV/xjVIHAlWeK3dzSpjrHiZlUsRDrh1VfgBS0tLUqg+jb6db4TQH3AqIwpGFIBIu1zCL5WY0PBpGbrB0dHTpPK6SAeh6BdNTW1OkcLPeFEVXSxTIJ4xGBenh9AUSpddqvpjauRR9uzCoAX0M8FIV0mqd5MFLPyhLeWhVwC0zhimDvzDDJkRENkbmaKURpXBnqPcNi6vkUjj6s/OLCnPr2Aeg0kenu7lY7whhgApEmv28aGhrSOIFb/5QK5iQcl1Ekx2Yhh7nH6VOn1UukIDWMTtmGu+LMW6YwPyNQ5hRcRJVe/BrnTtx5ZcCt7sSJB9TBrLI+1DMe6QAE00G5qQ/MPYsWAUSOjPiYTdIi1yHup+WmF4jHq2U0lZRKrBpDZA8sexUkJ454IQZPUovcgCF2V9cGtRnUe358RQlrRtrLjy3oIVqQrDFCjcGmRPgtBPqwP70II0zaH32HM/szV6GtoNQZsNLrUEMy9H45VNx11113G+IK4m5khz1oMvgcJ3IQF7wcRhr8k5/8TON1ijY3Z8lhrsgCVnJD53q5etc7ZPuVb5GN55+nq/rqq6+gJyO7nOYdrDcwEs3AC0xyFWEv0pAGzjUM6WCBlLaAUsW8hePtePtb5fLLtumeaDcy2kFEr3NYfcYxzEi5n0BPs669DW7y9ZjPAYcsnt1McEhisLTAS+cxXxjX6LDFaWneEfjuhUMvyj1f/JLMwEsw56e1jkHvB2EcP/TBm+Ta3bug5/TlhY5P/XKffOUr/6g5BT8D8pNIIM3skeE1XbBjokDUnNqDgb4eecPrt8nNN92o0aQb+vuH5L777pdBuGsPki6m2NyaZ/B06cWb5ZMfv13bucWfUEoSHHVwAfooI7Sv0Sk7kD174LpmEK3FYrUqhg0NzXhXLtddd428+z3Xa5mMAQozPLxQHX3TFX8g77lhD1YMcYMyzqdRJfWYyRKfsQBKu8CPQQb6+5D5nS+33fZRZYCZ2xy8bmlplJtv/hP0y6j9oTdh5sm6AuuLbigQbvpaOiyscJHs4GaWuTcPbALCXIHeID0yqjkAEyG22fPu3YalOhHOiAE4mO3/znfugPtq1/dMtphqM/RlZakKmSSNZA3iiGlICGVx93VXgzEmNTZj2IOwBCZtlDe/+U2wQbQHAXicBq0vcAwLdm4C8ee9+xlhBRM4hzZytcvzzXkWhR1g1kgDSfFjaHzh5k1qBAutzaqZX/OMu0A7rroKRhXJEYD5AGsCPIdh+DQTBIOYoq9rb5WLNl+IVqbvssXLM0RkM9owLuEWm0ams1Atp/7oBlXtVQBMcI9ePKERHeNjC8OwCkwjl0gOqi6n0yOICp2tLbYCkuaTOXVYOp4VQZby6VUY2dGlslROs92HQCgcDsAoDmjWyG+SmFqbbpw5j5S5c27PPnuDVCMPqYRt0TwjGJbOzi7z0oH8EKtAkU0obmlEh4znalpCuA/ZjpWim6Q7YiGT3ywUA/tyc5cJmGVhHaSFlSEmOwyyAjCQtbX1iPoC0trWrjXFMgZbzfxQm1AKe+BhjJbWLZhfTOVmcMfvk5C1IsQmWHxLjeAGRxJsfG3BdDZghNnqEQdmOk3Dx8SFBQ8GOolEQt+7wd3HYsLkh98/MDxmoIMcD65uQMfrOd2HsDspY3g+htSawCHsOARDGFhKpw8YGUlqXZHRKr+v9sFo85vG1wKOJPBwE27vjSgve+XAefD/4XBQS20Mi/sHhmDkKPxOT2cVCIYIcz+STGmhtZmhsa9CK8O0t63NzZAoBFfwBB2dnXLK+WrWLYHLwPBATpzs1m8pQ4EAMs9xGG2E4EjpCfl+ru6lxnIkoRQjCExO8dyZ0L0irYjmGMwwJGax5BTC2qHhIdMUE3EyHY1/7AH41b59+v8K/M6BzBgcGFY3yQSMITVFm97g2PFjcuTIyzo/pcSqkxvmEafsf/aA5jELmI+7YV3rOzQCJRh8WUtwQmlcu2mwsIZN4LV97VDgnAgXbdmsCQ8LrUxzfViJ7//gcX3HibSKpHcO4Bk/A3zmmQNy1vpO3WpraGxCwuWTdqTPPkhUPZIqijS/k2Zo/PD3vquZpP5nizMYx7ar+fNf/FIOv/SyVMWqVR1ZkWZCRtdLMG3BPuICu6T0lID8UzLIdOIdo0Z9rJAvUOoz84IWuaurU5HsgzQMDyfk2Week188tc+MYfvzjIMBDD8SHxga1m04htiJxIiGu5Sm7GRWd6wmcOYnw6MjY/LSS0flgW9+W6Zn7SfCHNhEtN2nemTvD54AM0OatjcilZ6Da70MYbUFMott87isApo7FIhHe/YB0cpBfWIo4nPLIIsIP944fPgIvERQXSUToKefeUa6T55CC27Czul228GDv5F/AQMSsAdMhZl1tsAmsHTe1NSsexQxXX2f2gdWlinqlIjjx7s1+2TCVYH3o6Pjsv+5g2DOtySZSEkoFNa8gwXbWnid9yIqZSJHUAY4UMoWKIX8hb643huCl4NhQAEKbbgjdPvHPglk0jIPvWUwxOourb9+w4AwlsjTfwcg/mgCOzCnCQ+rT7rPQVHFifsC1HzufM0j+AmhfxKSwg9D5sAkutn6hgaMlVG7kUXSxY9F+P0RM9gEJPHmG98ve/Zcq7iVAisZlmB77WzD2YeO2Oe5QmJ5be/5ynJkSaPG6/fshriasJn7jQySaPD44WQwFNHtsjisNcvz/FaItqMeoktGtLe3g0khxAv1uoHC8drbWpE8cW9ClGim2vF4LRIts7HDfVCOVRNHbAHJIwNYpW5va5G3vu1KB7fSUJAMLqylrcgmGNpxgRs24jNtmwdykpYfdtYJLf7oiivkkou3IDUe1wRoIpMB0TVqqHwBI77cmOX3j7T+LLFRgrzI/Lh1zwySOQNjDhZZmUbTG/TCRbKASynqH+zX1JuGlZLWc7pHM1F+bE6pGOjrl+uu3aV2qrCAq4OliU2VRqbSxgaQQPMSj50zKc3zyQFTfiu0Qf6fSMqdd94lPb39eMstNrPZSkJZFaKOMp7nKlItWAWqQ5RIa84QnN8X0jCy5NYLI8mCSQpBEKWAu0zcOJ3MTmmBhYtHQ8/9C84zPDyg2en73rsHmHB7gDtNBdwIVg0sWFqNVOMaXF/GOtvY3XH5IGzOEeydeUcG3H//l6Ubq6v6DaPHSs88hqd94Kc+3CfgMPyCjAjww2smPfwEiNkovzBRSZmAvvNDckgVsSPxWWSWVBdKGsNt/pcLn29/y5u0huFDX0pQKSZYsHTw7Ib89wkFWG4IzTt2NhKRT2vVqJn39nsB1gMfevhR+eGPfqwpMhtwK113qLmZSnuBKJD/QpROj6ltYNWYzGI7bqNHEIXStjD+Z6RBQzkGlYpEolpZ5k4Wg7QtF10o115ztVx+2aX5MN7gbvX9TMDQnZcEdMUfo+/5e11nc5fvoOPbe73Jc5ZnZogvv/yqfH/vXnl2/wEtcswBcbo/7krrv+Tgh+Uzfi+pnwSwn8er+QC3+plW8z9ZuFlbBgKnQDRrl8wLzjm7S3buuArxwFbd9zRTE29emPktXm6w7QhKA6d1rvMu0oqJOVu9t+D0wrFcIorthQvQPInE6tCh5+W3zz8vJ06c1Nok/z+Jq8a56ErpQkk8GUMm8Vso6jyvW5pbVEo2XbhJNmzo1CIKQ2O1DZzCSqUCzkopzvaRCyxtBM6vxFtbSEnIj6OAG7ywXDIjktOFa/NY/54xkDhGlTx6e/p0I5YH9xdZW6Dx1E9vI2GN/hqRSrPaHIIE6P9cu6dTXBQrFxpr41NggqWlAGACHzkNlhFP0DtziTNbWhepT86AEZzcrBjvTHnrTIErxh1qlTjtxzSe5zUkcA0gLstpMteOTaAxcR5rQzOh+znvDRPMA8vZAodtjzMHnUp72XGXz2Hf5UfFrVkmd5vVwdBioZhGHnyGY8mIwhkBB1nZ2Axm8cSQiqi5dR4CnFb/L2CZkV8s1/3S0pL8DzlKA2NCJILNAAAAAElFTkSuQmCC"/>
+<span class="text-center font-black text-xl leading-tight tracking-tight px-8">
+                    TOQUE CON<br/>LA NARIZ
+                </span>
+</button>
+<!-- Outer Ring Decoration -->
+<div class="absolute -inset-4 rounded-full border border-primary/20 border-dashed"></div>
+</div>
+<div class="flex flex-col items-center gap-1">
+<p class="text-primary/60 text-xs font-medium tracking-widest uppercase">
+                Mantén la postura...
+            </p>
+<div class="flex gap-1 mt-2">
+<div class="h-1 w-8 bg-primary rounded-full"></div>
+<div class="h-1 w-4 bg-primary/30 rounded-full"></div>
+<div class="h-1 w-4 bg-primary/30 rounded-full"></div>
+</div>
+</div>
+</footer>
+<!-- Background Illustration Elements -->
+<div class="fixed top-1/4 -left-12 w-48 h-48 bg-primary/5 rounded-full blur-3xl -z-20"></div>
+<div class="fixed bottom-1/4 -right-12 w-64 h-64 bg-primary/5 rounded-full blur-3xl -z-20"></div>
+</body></html>
